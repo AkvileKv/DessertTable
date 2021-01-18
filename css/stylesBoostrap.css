@@ -1,0 +1,141 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, serif;
+  margin: 0;
+}
+
+h2, h3 {
+  padding-left: 2%;
+}
+
+h2 {
+  margin: 20px 0;
+}
+
+p {
+  text-align: justify;
+}
+
+a {
+  font-weight: bold;
+}
+
+header, footer {
+  background-color: #FFF;
+}
+
+footer {
+  font-size: 15px;
+  color: #143a52;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.nice_div {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* menu left */
+.sidenav a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  color: #143a52;
+}
+
+.sidenav a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+ /* paveikslai */
+.table {
+  width: 100%;
+  right: 30%;
+}
+
+#content {
+  min-height: 550px;
+}
+
+.center {
+  text-align: center;
+}
+
+/* atskyrimai */
+hr.double {
+  overflow: visible;
+  padding: 0;
+  border: none;
+  border-top: medium double #333;
+  text-align: center;
+  clear: both;
+}
+
+hr.style:after {
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  background: white;
+}
+
+hr.light {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  clear: both;
+}
+
+.nice_div {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.imgBorder {
+  border: 1px double white;
+}
+
+/* home page pictures */
+/* Diamond images rules*/
+.diamond img {
+  -webkit-clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  transition: 1s;
+}
+
+.diamond img:hover {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+/* services page pictures */
+/* Cutout corners rules*/
+.corner img {
+  -webkit-clip-path:
+    polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 100% calc(100% - 20px),
+      calc(100% - 20px) 100%,
+      20px 100%, 0 calc(100% - 20px), 0 20px);
+  clip-path:
+    polygon(20px 0, calc(100% - 20px) 0, 100% 20px, 100% calc(100% - 20px),
+      calc(100% - 20px) 100%,
+      20px 100%, 0 calc(100% - 20px), 0 20px);
+}
+
+/* price table borders */
+/* Nepertraukiamos vaizdo kraštinės rules */
+.bg {
+  border: 0.5em solid transparent;
+  background: linear-gradient(white, white) padding-box,
+    repeating-linear-gradient(-45deg, #143a52 0, #143a52 12.5%, transparent 0, transparent 25%,
+      #fdcfdf 0, #fdcfdf 37.5%, transparent 0, transparent 50%) 0 / 6em 6em;
+}

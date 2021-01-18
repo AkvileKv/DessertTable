@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Desertų staliukas - Kontaktai</title>
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/stylesBoostrap.css">
+
+  <link rel="icon" href="images/favicon.ico">
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+  <style>
+    body {
+      background: url(images/background.jpg) no-repeat center center fixed;
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="page">
+    <header>
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light">
+
+          <a class="navbar-brand" href="">DesertuStaliukas.lt</a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+            <ul class="navbar-nav  ml-auto">
+              <li class="nav-item">
+                <a class="nav-link " href="index.html">Pagrindinis</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">Apie</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Paslaugos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#contact">Kontaktai</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="price.html">Kainos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="settings.html">Nustatymai</a>
+              </li>
+            </ul>
+
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3">
+          <div>
+            <div class="sidenav">
+              <a href="services.html#vestuvems">Vestuvėms</a>
+              <a href="services.html#gimtadieniui">Gimtadieniui</a>
+              <a href="services.html#krikstynoms">Krikštynoms</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-9">
+          <div id="content">
+            <h2 class="center">SUSISIEKITE SU MUMIS</h2>
+            <form name = "myForm" onsubmit="return validateForm()">
+              <div class="form-row">
+                <div class="col-6">
+                  <label for="exampleFormControlInput1">Vardas:</label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="First name" name="fname" minlength="2" autofocus>
+                </div>
+                <div class="col-6">
+                  <label for="exampleFormControlInput1">Pavardė:</label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Last name" name="lname" minlength="2">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputCity">Adresas:</label>
+                  <input type="text" class="form-control" id="inputCity" name="address">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="inputState">Miestas:</label>
+                  <input id="inputState" class="form-control" list="list2" name="city">
+                  <datalist id="list2">
+                    <option>Vilnius</option>
+                    <option>Kaunas</option>
+                    <option>Klaipėda</option>
+                  </datalist>
+                  </input>
+                </div>
+                <div class="form-group col-md-2">
+                  <label for="inputZip">Pašto kodas:</label>
+                  <input type="text" class="form-control" id="inputZip" name="zip" maxlength="5" minlength="3">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="exampleFormControlInput1">El. pašto adresas:</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email">
+                <label for="exampleFormControlInput1">Telefono nr.:</label>
+                <input id="number" type="text" class="form-control" id="exampleFormControlInput1" placeholder="86xxxxxxx" minlength=9 maxlength="9" name="phoneNumber">
+              </div>
+
+              <label for="exampleFormControlInput1">Susisiekti telefonu:</label>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" required>
+                <label class="form-check-label" for="inlineRadio1">Taip</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" required>
+                <label class="form-check-label" for="inlineRadio2">Ne</label>
+              </div>
+
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Žinutės tekstas:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message" maxlength="1000"></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Tematika:</label>
+                <input class="form-control" id="exampleFormControlSelect1" list="list1" name="theme">
+                <datalist id="list1">
+                  <option>Vestuvės</option>
+                  <option>Gimtadienis</option>
+                  <option>Krikštynos</option>
+                  <option>Kita</option>
+                </datalist>
+                </input>
+              </div>
+
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Naujienų prenumerata</label>
+              </div>
+              <div class="center">
+                <button type="button" class="btn btn-outline-secondary">Išvalyti</button>
+                <button type="submit" class="btn btn-dark" onclick="display()" >Pateikti užklausą</button>
+                <br>
+                <br>
+              </div>
+
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container-fluid">
+        2020 &copy; Akvile Kvietkauskaite
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+  function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    var y = document.forms["myForm"]["lname"].value;
+    var z = document.forms["myForm"]["address"].value;
+    var w = document.forms["myForm"]["email"].value;
+    var o = document.forms["myForm"]["phoneNumber"].value;
+    var u = document.forms["myForm"]["message"].value;
+    var c = document.forms["myForm"]["city"].value;
+    var p = document.forms["myForm"]["zip"].value;
+    var s = document.forms["myForm"]["theme"].value;
+
+    var fnameValidator = /^[A-Za-z]+$/;
+    var firstname = fnameValidator.test(x);
+
+    if (firstname == false ) {
+        alert("Vardas turi būti sudarytas iš raidžių");
+        return false;
+    }
+    if (x == "") {
+      alert("Vardo laukas turi būti užpildytas");
+      return false;
+    }
+    if (y == "") {
+      alert("Pavardės laukas turi būti užpildytas");
+      return false;
+    }
+    if (z == "") {
+      alert("Adreso laukas turi būti užpildytas");
+      return false;
+    }
+    if (c == "") {
+      alert("Miesto laukas turi būti užpildytas");
+      return false;
+    }
+    if (p == "") {
+      alert("Pašto kodo laukas turi būti užpildytas");
+      return false;
+    }
+    if (isNaN(p)) {
+      alert("Pašto kodo laukas turi būti užpildytas skaičiais xxxxx");
+      return false;
+    }
+    if (w == "") {
+      alert("El. pašto adreso laukas turi būti užpildytas");
+      return false;
+    }
+
+    var emailValidator =  /.+@.+\..{2,3}$/;
+    var email = emailValidator.test(w);
+
+    if (email == false ) {
+        alert("El. paštas turi būti .xx arba .xxx");
+        return false;
+    }
+
+    if (o == "") {
+      alert("Telefono numerio laukas turi būti užpildytas");
+      return false;
+    }
+    if (isNaN(o)){
+      alert("Telefono numerio laukas turi būti užpildytas skaičiais");
+      return false;
+    }
+    if (u == "") {
+      alert("Žinutės laukas turi būti užpildytas");
+      return false;
+    }
+    if (s == "") {
+      alert("Tematikos laukas turi būti užpildytas");
+      return false;
+    }
+  }
+
+  function display() {
+      var x = document.forms["myForm"]["fname"].value;
+      var y = document.forms["myForm"]["lname"].value;
+      var z = document.forms["myForm"]["address"].value;
+      var w = document.forms["myForm"]["email"].value;
+      var o = document.forms["myForm"]["phoneNumber"].value;
+      var u = document.forms["myForm"]["message"].value;
+      var c = document.forms["myForm"]["city"].value;
+      var p = document.forms["myForm"]["zip"].value;
+      var s = document.forms["myForm"]["theme"].value;
+
+      if(x != "" && y != "" && z != "" && w != "" && o != "" && u != "" && c != "" && p != "" && s != ""){
+        alert( "------Užklausa sėkmingai pateikta!------ "+ "\n Vardas: " +x+ "\n Pavardė: " +y+"\n Adresas: "+z+ "\n Miestas: " +c+ "\n Pašto kodas: "+p+"\n El. pašto. adresas: "
+         +w+"\n Telefono nr.: " +o+"\n Žinutė: "+u+"\n Tematika: " +s);
+
+      }
+  }
+  </script>
+
+</body>
+
+</html>

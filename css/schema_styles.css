@@ -1,0 +1,110 @@
+/* background-color */
+.page1 {
+  width: 800px;
+  height: 500px;
+  border: 1px solid #000;
+  text-align: center;
+  background-color: #e0dede;
+  margin-top: 20px;
+}
+
+.header {
+  width: 780px;
+  height: 80px;
+  border: 1px solid #000;
+  margin-left: 10px;
+  background-color: #FFF;
+}
+
+.menu-left1 {
+  float: left;
+  width: 110px;
+  height: 350px;
+  border: 1px solid #000;
+  margin-left: 10px;
+  margin-top: 10px;
+  background-color: #FFF;
+}
+
+.content1 {
+  width: 650px;
+  height: 350px;
+  border: 1px solid #000;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  float: right;
+  background-color: #FFF;
+}
+
+.footer {
+  width: 780px;
+  height: 20px;
+  border: 1px solid #000;
+  margin-left: 10px;
+  margin-top: 370px;
+  background-color: #FFF;
+}
+
+.topnav1 {
+  width: 760px;
+  height: 50px;
+  border: 1px solid #000;
+  margin-left: 10px;
+  margin-top: 0px;
+  background-color: #fadcaa;
+}
+
+.logo1 {
+  width: 190px;
+  height: 20px;
+  border: 1px solid #000;
+  margin-left: 10px;
+  float: left;
+  margin-top: 15px;
+  background-color: #66bfbf;
+}
+
+.menu1 {
+  width: 400px;
+  height: 20px;
+  border: 1px solid #000;
+  margin-right: 10px;
+  float: right;
+  margin-top: 15px;
+  background-color: #66bfbf;
+}
+
+.nice_div1 {
+  width: 630px;
+  height: 100px;
+  border: 1px solid #000;
+  margin-left: 10px;
+  margin-top: 0px;
+  margin-right: 10px;
+  background-color: #fadcaa;
+}
+
+.nice_div2 {
+  width: 630px;
+  height: 100px;
+  border: 1px solid #000;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  background-color: #fadcaa;
+}
+
+.nice_div3 {
+  width: 630px;
+  height: 100px;
+  border: 1px solid #000;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  background-color: #fadcaa;
+}
+
+.text {
+  vertical-align: -50px;
+}
